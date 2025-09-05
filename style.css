@@ -1,0 +1,1401 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Arabic:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Arabic:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+
+  box-sizing: border-box;
+}
+
+/* navbar */
+/* ************************************************************** */
+
+.navbar {
+  display: flex;
+  background-color: #0d6cac;
+  color: #e8f2f8;
+  font-family: "Montserrat", sans-serif;
+  height: 110px;
+  padding: 17px 27px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e8f2f8;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo:hover {
+  cursor: pointer;
+}
+
+.navbar .logo img {
+  width: 100px;
+  height: auto;
+}
+
+.navbar .nav_menu {
+  display: flex;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+  gap: 30px;
+}
+
+.navbar .nav_menu a {
+  text-decoration: none;
+  color: #e8f2f8;
+}
+
+.navbar .nav_menu a:active {
+  color: #ffcb00;
+}
+
+.navbar .nav_menu .support {
+  border: 2px solid #ffffff;
+  padding: 6px 8px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  /* margin-left: 20px; */
+  margin-right: 10px;
+  gap: unset;
+  cursor: pointer;
+}
+
+.navbar .nav_menu .support:hover {
+  background-color: #e8f2f8;
+  color: #0d6cac;
+}
+
+.navbar .nav_menu a {
+  display: flex;
+  align-items: center;
+}
+
+/* .navbar .nav_menu a:nth-child(1) {
+  color: #ffcb00;
+} */
+
+/* .navbar .nav_menu a:hover {
+  cursor: pointer;
+  color: #FFCB00;
+} */
+
+.navbar .nav_menu .social_icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .nav_menu .social_icons img {
+  cursor: pointer;
+}
+
+/* hero section */
+/* *********************************************************** */
+
+.hero_section {
+  height: 90vh;
+  background-color: #0d6cac;
+  background-image: url(./Assets/calligraphy.png);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-around; */
+  color: #e8f2f8;
+  /* align-items: center; */
+  /* gap: 20px; */
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero_section .hero_content .top p {
+  font-family: "Almarai", sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 47px;
+}
+
+.hero_section .hero_content .middle p:nth-child(1) {
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 64px;
+  line-height: 47px;
+  color: #ffcb00;
+  font-weight: 900;
+}
+
+.hero_section .hero_content .middle p:nth-child(2) {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 35px;
+  color: #ececec;
+  text-transform: uppercase;
+}
+
+.hero_section .hero_content .bottom p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #e8f2f8;
+}
+
+/* salah area */
+/* *********************************************************** */
+
+.salah_area {
+  border: 1px solid red;
+  display: flex;
+  /* height: 70vh; */
+  background-color: #e8f2f8;
+  justify-content: space-around;
+  align-items: center;
+  padding: 51px 54px;
+}
+
+.salah_area .prayer_section {
+  border: 3px solid #ffcb00;
+  width: 334px;
+  height: auto;
+  /* height: 438px; */
+  border-top-left-radius: 220px;
+  border-top-right-radius: 220px;
+  align-self: center;
+}
+.salah_area .prayer_section .prayer_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.salah_area .prayer_section .prayer_header p:nth-child(1) {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0d6cac;
+  text-align: center;
+}
+
+.salah_area .prayer_section .prayer_header p:nth-child(3) {
+  font-weight: 500;
+  font-size: 20px;
+  color: #0d6cac;
+}
+
+.salah_area .prayer_section .prayer_timing .prayer_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  color: #0d6cac;
+}
+
+.facebook_feeds {
+  display: flex;
+  flex-direction: column; /* Title upar, feeds neeche */
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Title aur feeds ke beech gap */
+  /* width: 100%; */
+  padding: 20px;
+}
+
+.facebook_feeds .title {
+  display: flex;
+  font-weight: 700;
+  font-size: 33px;
+  color: #0d6cac;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+.facebook_feeds .img_container {
+  display: flex;
+  gap: 10px;
+}
+
+.facebook_feeds .img_container .img {
+  display: flex;
+  width: 256px;
+  height: 310px;
+  border-radius: 20px;
+  flex-direction: column;
+  cursor: pointer;
+}
+.facebook_feeds .img img {
+  /* border-radius: 8px; */
+}
+
+.facebook_feeds .img .fb {
+  background-color: white;
+  padding: 10px 20px;
+  text-align: right;
+}
+
+/* mission area */
+/* ********************************************** */
+
+.mission {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d6cac;
+  color: #e8f2f8;
+  padding: 33px 40px;
+}
+
+.mission .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: fle;
+  width: 45%;
+  gap: 20px;
+  align-self: baseline;
+}
+
+.mission .left .top h1 {
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 47px;
+  text-align: center;
+}
+
+.mission .left .top p.para_one {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: justify;
+}
+
+.mission .left .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission .left .bottom h2 {
+  font-weight: 900;
+  font-size: 27px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.mission .left .bottom p.para_two {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  color: #ffcb00;
+  text-align: center;
+}
+
+.mission .left .bottom button.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 17px 42px;
+  background-color: #ffcb00;
+  border: none;
+  color: #0d6cac;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  width: 190px;
+  cursor: pointer;
+}
+
+.mission .left .bottom button.btn:hover {
+  color: #ffcb00;
+  background-color: #0d6cac;
+  border: 1px solid #4eadec;
+}
+
+.mission .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  cursor: pointer;
+}
+
+/* quran hadith */
+/* ********************************************** */
+
+.quran_hadith {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8f2f8;
+  color: #0d6cac;
+  gap: 40px;
+}
+
+.quran_hadith .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+
+.quran_hadith .top .quranic_verse,
+.quran_hadith .bottom .quranic_verse {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 47px;
+  margin-top: 15px;
+}
+
+.quran_hadith .top p.one {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.quran_hadith .top p.two {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  font-family: "Almarai", sans-serif;
+}
+
+.quran_hadith .top p.two {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.quran_hadith .top p.three {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.quran_hadith .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.quran_hadith .bottom p.one {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+}
+
+/* Gallery */
+/* ********************************************************** */
+.gallery {
+  padding: 45px 60px;
+  background-color: #e8f2f8;
+}
+
+.gallery h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 47px;
+  margin-top: 30px;
+  color: #0d6cac;
+  text-align: center;
+}
+
+.gallery .gallery_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.gallery .gallery_content .box {
+  width: 275px;
+  height: 172px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.gallery .gallery_content .box img {
+  border-radius: 3px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Location */
+/* ********************************************* */
+
+.location_container {
+  padding: 30px 150px;
+  background-color: #0d6cac;
+}
+
+.location_container h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 47px;
+  color: #e8f2f8;
+  text-align: center;
+}
+
+.location_container .map {
+  display: flex;
+  justify-content: center;
+}
+
+/* footer */
+/* ************************************************* */
+
+.footer {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-around;
+
+  background-image: url(./Assets/footer\ background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e8f2f8;
+  height: 350px;
+  color: #0d6cac;
+}
+
+.footer .logo {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer .logo p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  cursor: pointer;
+}
+
+.footer .logo img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+.footer .footer_menu {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.footer .footer_menu a {
+  text-decoration: none;
+  color: #0d6cac;
+}
+
+.footer .footer_menu a:active {
+  color: #ffcb00;
+}
+
+.footer .footer_menu .support {
+  padding: 8px 12px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  /* margin-left: 20px; */
+  /* margin-right: 10px; */
+  /* gap: unset; */
+  cursor: pointer;
+  background-color: #0d6cac;
+  color: #ffffff;
+}
+
+.footer .footer_menu .support:hover {
+  background-color: #ffffff;
+  color: #0d6cac;
+}
+
+.footer .footer_menu .footer_items:hover {
+  cursor: pointer;
+}
+
+.footer .social_icons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: start; */
+  gap: 20px;
+}
+
+.footer .social_icons .head {
+  font-family: "Akaya Telivigala", system-ui;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+.footer .social_icons .img {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.footer .social_icons .img img:hover {
+  cursor: pointer;
+}
+
+.footer .social_icons .email {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  cursor: pointer;
+}
+
+.footer .social_icons .email:hover {
+  color: #ffcb00;
+}
+
+/* About Page */
+
+/* hero section */
+/* ********************************************** */
+
+.hero_section {
+  height: 65vh;
+  background-color: #0d6cac;
+  background-image: url(./Assets/calligraphy.png);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-around; */
+  color: #e8f2f8;
+  /* align-items: center; */
+  /* gap: 20px; */
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero_section .hero_content p {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 78px;
+  color: #ececec;
+}
+
+.about_page .about_content,
+.education_page .about_content {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  background-color: #0d6cac;
+  /* align-items: center; */
+  color: #e8f2f8;
+  padding: 60px 100px;
+}
+
+.about_page .about_content .left,
+.right {
+  width: 40%;
+}
+
+.about_page .about_content .about,
+.vision,
+.goals,
+.facilities {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_page .about_content .about .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_page .about_content .about .left h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 47px;
+  text-align: center;
+}
+
+.about_page .about_content .about .left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.about_page .about_content .about .right {
+  display: flex;
+  justify-content: center;
+}
+
+.about_page .about_content .vision .left {
+  display: flex;
+  justify-content: center;
+}
+
+.about_page .about_content .vision .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_page .about_content .vision .right h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 47px;
+  text-align: center;
+}
+
+.about_page .about_content .vision .right p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.about_page .about_content .goals .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_page .about_content .goals .left h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 47px;
+  text-align: center;
+}
+
+.about_page .about_content .goals .left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.about_page .about_content .goals .left ul {
+  list-style: none;
+}
+
+.about_page .about_content .goals .right {
+  display: flex;
+  justify-content: center;
+}
+
+.about_page .about_content .facilities h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 47px;
+  text-align: center;
+}
+
+
+.about_page img{
+  cursor: pointer;
+}
+
+.about_page .about_content .facilities .fac_img {
+  display: flex;
+  justify-content: center;
+}
+
+.about_page .about_content .facilities .left {
+  visibility: hidden;
+}
+
+/* Masjid Page */
+/* *********************************************** */
+
+.masjid_page .main_content {
+  background-color: #0d6cac;
+  gap: 150px;
+  color: #e8f2f8;
+  padding: 60px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.masjid_page .main_content .left,
+.right {
+  width: 40%;
+}
+
+.masjid_page .main_content .geographical,
+.masjid_page .main_content .current {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* **************** */
+
+.masjid_page .main_content .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.masjid_page .main_content .left h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 47px;
+  /* text-align: center; */
+}
+
+.masjid_page .main_content .left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.masjid_page .main_content .right {
+  display: flex;
+  justify-content: center;
+}
+
+.masjid_page .main_content .gate {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.masjid_page img{
+  cursor: pointer;
+}
+
+.masjid_page .main_content .gate .right p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #e8f2f8;
+}
+
+.masjid_page .main_content .current_progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.masjid_page .main_content .current_progress h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 47px;
+}
+
+.masjid_page .main_content .current_progress p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.donate {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate .top h1 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.donate .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate .middle p {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  width: 50%;
+}
+
+.donate .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.dollar {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.dollar .left,
+.dollar .right {
+  display: flex;
+  gap: 10px;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.donate .bottom .dollar .left h1,
+.donate .bottom .dollar .right h1 {
+  font-weight: 600;
+  font-size: 41px;
+  line-height: 50px;
+  color: #ffcb00;
+}
+
+.dollar .left h1,
+.dollar .left p,
+.dollar .right h1,
+.dollar .right p {
+  margin: 0; /* default margin remove */
+  padding: 0;
+}
+
+.donate .bottom .dollar .left p,
+.donate .bottom .dollar .right p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #e8f2f8;
+}
+
+.donate .bottom .bar {
+  width: 840px;
+  height: 28px;
+  border-radius: 18px;
+  background-color: #e8f2f8;
+  margin: auto;
+}
+
+.donate .bottom .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 190px;
+  height: 52px;
+}
+
+.donate .bottom .btn button {
+  background-color: #0d6cac;
+  color: #ffcb00;
+  border: 2px solid #ffcb00;
+  padding: 17px 42px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.donate .bottom .btn button:hover {
+  background-color: #ffcb00;
+  color: #0d6cac;
+}
+
+/* Education Page */
+/* ********************************** */
+
+.education_page .about_content .left,
+.right {
+  width: 40%;
+}
+.education_page .about_content .one,
+.education_page .about_content .two,
+.education_page .about_content .three,
+.education_page .about_content .four {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.education_page img{
+  cursor: pointer;
+}
+
+
+.education_page .about_content .one .left {
+  display: flex;
+  flex-direction: column;
+}
+.education_page .about_content .one .left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+.education_page .about_content .one .right {
+  display: flex;
+  justify-content: center;
+}
+.education_page .about_content .two .left {
+  display: flex;
+  justify-content: center;
+}
+.education_page .about_content .two .right {
+  display: flex;
+  flex-direction: column;
+}
+.education_page .about_content .two .right h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+.education_page .about_content .two .right p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+.education_page .about_content .three .left h2 {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 47px;
+  color: #ffcb00;
+}
+.education_page .about_content .three .left p {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 27px;
+}
+
+.education_page .school {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 60px 45px;
+}
+
+.education_page .school .arabic,
+.education_page .school .non_arabic {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+}
+
+.education_page .school .arabic .one,
+.education_page .school .arabic .two,
+.education_page .school .arabic .three,
+.education_page .school .arabic .four {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.education_page .school h3,
+.education_page .school p {
+  margin: 0; /* default margin hat gaya */
+  padding: 0;
+}
+
+.education_page .school .non_arabic .one,
+.education_page .school .non_arabic .two,
+.education_page .school .non_arabic .three,
+.education_page .school .non_arabic .four {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+}
+
+.education_page .school .arabic .head,
+.education_page .school .non_arabic .head {
+  /* width: 50%; */
+  background-color: #feb458;
+  color: #ffffff;
+  height: 55px;
+  padding: 13px 51px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.education_page .school h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #e8f2f8;
+}
+.education_page .school p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.education_page .school .non_arabic ul {
+  list-style-type: decimal;
+  margin: 0; /* default margin remove */
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+/* Team Page */
+/* ************************************* */
+
+.team_content {
+    display: flex
+;
+    padding: 60px 140px;
+    background-color: #0d6cac;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.team_content .para {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #e8f2f8;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The Waqf */
+/* ******************** */
+
+.team_content .the_waqf {
+    display: flex
+;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.team_content img{
+  cursor: pointer;
+}
+
+.team_content .the_waqf .top,
+.team_content .waqf_member .top {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 47px;
+  color: #ffcb00;
+  text-align: center;
+}
+
+.team_content .the_waqf .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.team_content .the_waqf .bottom .bottom_items {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .team_content .the_waqf .bottom .left,
+.team_content .the_waqf .bottom .right {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  gap: 20px; 
+} */
+
+.team_content .the_waqf .bottom p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.team_content .the_waqf .bottom img {
+  object-fit: cover;
+}
+
+.team_content .the_waqf .bottom .p_one {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 27px;
+  color: #e8f2f8;
+}
+
+.team_content .the_waqf .bottom .p_two {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 27px;
+  color: #ffcb00;
+}
+
+.team_content .the_waqf .bottom .para {
+  display: flex;
+  gap: 10px;
+}
+
+/* waqf_members */
+/* ********************************** */
+
+.team_content .waqf_member {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team_content .waqf_member .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.team_content .waqf_member .bottom .bottom_items {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team_content .waqf_member .bottom .bottom_items .para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #e8f2f8;
+  text-align: center;
+}
+
+/* .team_content .waqf_member .bottom .bottom_items .top{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.team_content .waqf_member .bottom .bottom_items .bottom{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; */
+
+/* The Board */
+/* ************************************ */
+
+.team_content .the_board {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team_content .the_board .one {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.team_content .the_board .bottom .bottom_items {
+  /* width: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team_content .the_board .bottom {
+  display: flex;
+  gap: 80px 125px;
+}
+
+.team_content .the_board .bottom .bottom_items .para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #e8f2f8;
+  text-align: center;
+  gap: 10px;
+}
+
+.team_content .the_board .bottom .bottom_items .para p {
+  margin: 0;
+  padding: 0;
+}
+
+.team_content .the_board .bottom .bottom_items .bottom {
+  display: flex;
+  gap: 20px;
+}
+
+.team_content .the_board .bottom .bottom_items .p_two {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffcb00;
+  white-space: nowrap; /* 👈 wrap hone se rok dega */
+}
+
+/* bottom two */
+
+.team_content .the_board .two {
+    display: flex
+;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 108px;
+}
+
+/* bottom three */
+
+.team_content .the_board .three {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 105px;
+}
+
+/* Contact Us page */
+/* ************************************ */
+
+.form_section{
+  padding: 80px 320px;
+  background-color: #0D6CAC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.form_section p{
+font-weight: 400;
+font-size: 19px;
+line-height: 27px;
+color: #E8F2F8;
+text-align: center;
+}
+
+.form_section form{
+border: 2px solid #FFCB00;
+width: 78%;
+border-radius: 10px;
+    padding: 47px 32px;
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+gap: 25px;
+
+}
+
+.form_section form input{
+width: 100%;
+background-color: #FAFAFA;
+border: none;
+}
+
+.form_section form input::placeholder{
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #757575;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form_section form .input_main{
+height: 45px;
+padding: 10px;
+}
+
+.form_section form .input_sec{
+height: 100px;
+}
+
+.form_section form button{
+width: 196px;
+height: 48px;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+color: #FFFFFF;
+background-color: unset;
+border: none;
+cursor: pointer;
+}
+
+.form_section form button:hover{
+background-color: white;
+color: #FFCB00;
+}

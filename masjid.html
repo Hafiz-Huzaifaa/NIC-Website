@@ -139,15 +139,17 @@
           <div class="bottom">
             <div class="dollar">
               <div class="left">
-                <h1>$93,000</h1>
+                <h1 id="target">$93,000</h1>
                 <p>Raised so far</p>
               </div>
               <div class="right">
-                <h1>$207,000</h1>
+                <h1 id="collected">$207,000</h1>
                 <p>Our Goal</p>
               </div>
             </div>
-            <div class="bar"></div>
+            <div class="bar">
+              <div class="fill" id="progress"></div>
+            </div>
             <div class="btn">
             <button>DONATE NOW</button>
           </div>
@@ -184,5 +186,53 @@
         <div class="email">Email: contact@thenic.com</div>
     </div>
     </div>
+
+    <script>
+      function typeEffect(element, text, speed = 80) {
+        let i = 0;
+        element.textContent = "";
+        function typing() {
+          if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(typing, speed);
+          }
+        }
+        typing();
+      }
+      
+      function animateBar(barElement, percent, duration = 2000) {
+        let width = 0;
+        const stepTime = duration / percent;
+        function grow() {
+          if (width < percent) {
+            width++;
+            barElement.style.width = width + "%";
+            setTimeout(grow, stepTime);
+          }
+        }
+        grow();
+      }
+      
+      window.onload = () => {
+        const targetEl = document.getElementById("target");
+        const collectedEl = document.getElementById("collected");
+        const progress = document.getElementById("progress");
+      
+        const targetValue = 207000;    
+        const collectedValue = 93000;  
+        const percent = Math.round((collectedValue / targetValue) * 100);
+      
+        // typing effect (no cursor)
+        typeEffect(targetEl, "$" + targetValue.toLocaleString(), 80);
+        typeEffect(collectedEl, "$" + collectedValue.toLocaleString(), 80);
+      
+        // bar animate FORAN sath-sath
+        animateBar(progress, percent, 2000);
+      };
+      </script>
+      
+      
+      
   </body>
 </html>

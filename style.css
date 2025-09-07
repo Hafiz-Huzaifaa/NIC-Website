@@ -8,7 +8,7 @@
   /* margin: 0;
   padding: 0; */
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 body {
@@ -109,7 +109,7 @@ body {
 /* *********************************************************** */
 
 .hero_section {
-  height: 90vh;
+  /* height: 90vh; */
   background-color: #0d6cac;
   background-image: url(./Assets/calligraphy.png);
   background-repeat: no-repeat;
@@ -130,7 +130,7 @@ body {
   align-items: center;
   height: 100%;
   text-align: center;
-  padding: 40px 0;
+  padding: 80px 0;
 }
 
 .hero_section .hero_content .top p {
@@ -167,7 +167,7 @@ body {
 /* *********************************************************** */
 
 .salah_area {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   /* height: 70vh; */
   background-color: #e8f2f8;
@@ -363,6 +363,7 @@ body {
   background-color: #e8f2f8;
   color: #0d6cac;
   gap: 40px;
+  padding: 40px 0px;
 }
 
 .quran_hadith .top {
@@ -426,7 +427,7 @@ body {
 /* Gallery */
 /* ********************************************************** */
 .gallery {
-  padding: 45px 60px;
+  padding: 1px 60px 45px 60px;
   background-color: #e8f2f8;
 }
 
@@ -604,7 +605,7 @@ body {
 /* ********************************************** */
 
 .hero_section {
-  height: 65vh;
+  /* height: 65vh; */
   background-color: #0d6cac;
   background-image: url(./Assets/calligraphy.png);
   background-repeat: no-repeat;
@@ -618,7 +619,7 @@ body {
   /* gap: 20px; */
 }
 
-.hero_content {
+/* .hero_content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -626,7 +627,7 @@ body {
   height: 100%;
   text-align: center;
   padding: 40px 0;
-}
+} */
 
 .hero_section .hero_content p {
   font-weight: 700;
@@ -741,8 +742,7 @@ body {
   text-align: center;
 }
 
-
-.about_page img{
+.about_page img {
   cursor: pointer;
 }
 
@@ -813,7 +813,7 @@ body {
   padding: 0 50px;
 }
 
-.masjid_page img{
+.masjid_page img {
   cursor: pointer;
 }
 
@@ -904,6 +904,12 @@ body {
   font-size: 41px;
   line-height: 50px;
   color: #ffcb00;
+  border-right: 3px solid #ffcb00; /* cursor effect */
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+
+  margin: 5px 0;
 }
 
 .dollar .left h1,
@@ -920,7 +926,10 @@ body {
   font-size: 20px;
   line-height: 25px;
   color: #e8f2f8;
-}
+  width: 100%;
+  text-align: center;
+width: 223px;
+  }
 
 .donate .bottom .bar {
   width: 840px;
@@ -928,6 +937,13 @@ body {
   border-radius: 18px;
   background-color: #e8f2f8;
   margin: auto;
+  overflow: hidden;
+}
+
+.fill {
+  width: 0%;
+  height: 100%;
+  background: #ffcb00; /* same as h1 color */
 }
 
 .donate .bottom .btn {
@@ -970,10 +986,9 @@ body {
   align-items: center;
 }
 
-.education_page img{
+.education_page img {
   cursor: pointer;
 }
-
 
 .education_page .about_content .one .left {
   display: flex;
@@ -1100,12 +1115,11 @@ body {
 /* ************************************* */
 
 .team_content {
-    display: flex
-;
-    padding: 60px 140px;
-    background-color: #0d6cac;
-    flex-direction: column;
-    gap: 75px;
+  display: flex;
+  padding: 60px 140px;
+  background-color: #0d6cac;
+  flex-direction: column;
+  gap: 75px;
 }
 
 .team_content .para {
@@ -1121,15 +1135,14 @@ body {
 /* ******************** */
 
 .team_content .the_waqf {
-    display: flex
-;
-    flex-direction: column;
-    gap: 70px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
 }
 
-.team_content img{
+.team_content img {
   cursor: pointer;
 }
 
@@ -1308,13 +1321,12 @@ body {
 /* bottom two */
 
 .team_content .the_board .two {
-    display: flex
-;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 108px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 108px;
 }
 
 /* bottom three */
@@ -1331,71 +1343,74 @@ body {
 /* Contact Us page */
 /* ************************************ */
 
-.form_section{
+.form_section {
   padding: 80px 320px;
-  background-color: #0D6CAC;
+  background-color: #0d6cac;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
 
-.form_section p{
-font-weight: 400;
-font-size: 19px;
-line-height: 27px;
-color: #E8F2F8;
-text-align: center;
+.form_section p {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 27px;
+  color: #e8f2f8;
+  text-align: center;
 }
 
-.form_section form{
-border: 2px solid #FFCB00;
-width: 78%;
-border-radius: 10px;
-    padding: 47px 32px;
-display: flex;
-flex-direction: column;
-/* align-items: center; */
-gap: 25px;
-
+.form_section form {
+  border: 2px solid #ffcb00;
+  width: 78%;
+  border-radius: 10px;
+  padding: 47px 32px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 25px;
 }
 
-.form_section form input{
-width: 100%;
-background-color: #FAFAFA;
-border: none;
+.form_section form input {
+  width: 100%;
+  background-color: #fafafa;
+  border: none;
 }
 
-.form_section form input::placeholder{
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-color: #757575;
+.form_section form input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #757575;
   font-family: "Montserrat", sans-serif;
 }
 
-.form_section form .input_main{
-height: 45px;
-padding: 10px;
+.form_section form .input_main {
+  height: 45px;
+  padding: 10px;
 }
 
-.form_section form .input_sec{
-height: 100px;
+.form_section form .input_sec {
+  height: 100px;
 }
 
-.form_section form button{
-width: 196px;
-height: 48px;
-font-weight: 700;
-font-size: 14px;
-line-height: 18px;
-color: #FFFFFF;
-background-color: unset;
-border: none;
-cursor: pointer;
+.form_section form button {
+  width: 196px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
 }
 
-.form_section form button:hover{
-background-color: white;
-color: #FFCB00;
+.form_section form button:hover {
+  background-color: white;
+  color: #ffcb00;
 }
+
+/* Media Queries */
+
+/* for iphone SE */

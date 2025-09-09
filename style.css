@@ -268,8 +268,8 @@ body {
   align-items: center;
   background-color: #0d6cac;
   color: #e8f2f8;
-  padding: 33px 40px;
-}
+  padding: 33px 57px;
+  }
 
 .mission .left {
   display: flex;
@@ -350,6 +350,11 @@ body {
   line-height: 27px;
   cursor: pointer;
 }
+
+.mission .right img {
+width: 100%;
+}
+
 
 /* quran hadith */
 /* ********************************************** */
@@ -452,6 +457,10 @@ body {
   height: 172px;
   border-radius: 3px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .gallery .gallery_content .box img {
@@ -459,6 +468,7 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  
 }
 
 /* Location */
@@ -639,11 +649,12 @@ body {
 .education_page .about_content {
   display: flex;
   flex-direction: column;
-  gap: 150px;
+     gap: 94px;
   background-color: #0d6cac;
   /* align-items: center; */
   color: #e8f2f8;
-  padding: 60px 100px;
+  padding: 60px 0px;
+  
 }
 
 .about_page .about_content .left,
@@ -742,7 +753,8 @@ body {
 }
 
 .about_page img {
-  cursor: pointer;
+    cursor: pointer;
+    width: 100%;
 }
 
 .about_page .about_content .facilities .fac_img {
@@ -987,6 +999,7 @@ width: 223px;
 
 .education_page img {
   cursor: pointer;
+  width: 100%;
 }
 
 .education_page .about_content .one .left {
@@ -1080,15 +1093,18 @@ width: 223px;
   /* width: 50%; */
   background-color: #feb458;
   color: #ffffff;
-  height: 55px;
-  padding: 13px 51px;
+  /* width: 555px; */
+  height: auto;
+  padding: 13px 25px;
   border-radius: 20px;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   text-align: center;
+  align-items: center;
+    justify-content: center;
 }
 
 .education_page .school h3 {
@@ -1412,5 +1428,671 @@ width: 223px;
 
 /* Media Queries */
 
-/* for iphone SE */
+/* for large screen */
+
+@media (min-width: 1201px) {
+.navbar{
+  gap: 20px;
+}
+
+.navbar .nav_menu {
+    gap: 24px;
+}
+
+
+
+.about_page .about_content, .education_page .about_content {
+    padding: 60px 0;
+}
+
+.form_section form {
+    width: 100%;
+}
+}
+
+
+/* Large devices (Laptops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+
+.navbar .nav_menu {
+    font-size: 16px;
+     gap: 20px;
+}
+
+.salah_area {
+    gap: 30px;
+}
+
+.masjid_page img {
+    width: 100%;
+}
+
+.masjid_page .main_content {
+    padding: 60px 0px;
+}
+
+.form_section {
+    padding: 80px 132px;
+}
+
+}
+
+
+/* Medium devices (Large Tablets / Small Laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+.navbar .nav_menu {
+    font-size: 16px;
+       gap: 20px;
+       flex-direction: column;
+           align-items: center;
+}
+
+.navbar {
+    padding: 17px 11px;
+         flex-direction: column;
+         height: auto;
+         justify-content: center;
+         align-items: center;
+         gap: 29px;
+}
+
+.salah_area {
+    flex-wrap: wrap;
+}
+.mission{
+  flex-direction: column;
+      padding: 33px 0px;
+      gap: 40px;
+}
+
+.mission .left {
+     justify-content: center;
+        align-self: unset;
+        width: unset;
+}
+
+.mission .left .top p.para_one {
+    padding: 0px 45px;
+}
+
+.mission .right p {
+   text-align: center;
+}
+
+.mission .right img {
+  width: unset;
+}
+
+.location_container {
+    padding: 30px 26px;
+    }
+
+    .about_page .about_content  .vision, .facilities {
+        flex-direction: column-reverse;
+}
+
+.about_page .about_content .vision .right p {
+    padding: 0 56px;
+}
+
+.about_page .about_content .left, .right {
+    width: unset;
+}
+
+.about_page .about_content .about .left p {
+    padding: 0px 50px;
+    text-align: justify;
+}
+
+.about_page .about_content .goals{
+flex-direction: column;
+padding: 0 55px;
+}
+
+.about_page .about_content .about{
+flex-direction: column;
+padding: 0 55px;
+}
+
+.about_page .about_content, .education_page .about_content {
+    gap: 60px;
+
+}
+
+.about_page .about_content .facilities .left {
+    display: none;
+}
+
+
+.masjid_page .main_content .geographical, .masjid_page .main_content .current {
+ flex-direction: column;
+}
+
+.masjid_page .main_content .left {
+   width: unset;
+}
+
+.masjid_page .main_content .left h1 {
+     text-align: center;
+}
+
+.masjid_page .main_content .left p {
+    text-align: justify;
+}
+
+.masjid_page .main_content .gate {
+     flex-direction: column;
+     padding: unset;
+     gap: 91px;
+     text-align: center;
+}
+
+.masjid_page .midd img{
+ transform: rotate(90deg);
+}
+
+.masjid_page .main_content .current_progress {
+padding: unset;
+}
+
+.masjid_page .main_content .current_progress p {
+       text-align: justify;
+}
+
+.donate .middle p {
+   width: unset;
+}
+
+
+.masjid_page .main_content {
+     padding: 60px 67px;
+     gap: 50px;
+   }
+
+
+.donate .bottom {
+    width: 100%;
+}
+
+
+.donate .bottom .bar {
+    width: 100%;
+}
+
+.team_content {
+    padding: 60px 66px;
+ 
+}
+
+.form_section {
+    padding: 80px 20px;
+}
+
+}
+
+
+
+/* Small devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+ .navbar .nav_menu {
+    font-size: 16px;
+       gap: 20px;
+       flex-direction: column;
+           align-items: center;
+}
+
+.navbar {
+    padding: 17px 11px;
+         flex-direction: column;
+         height: auto;
+         justify-content: center;
+         align-items: center;
+         gap: 29px;
+}
+
+.hero_section {
+    background-position: center;
+
+}
+
+.hero_section .hero_content .middle p:nth-child(1) {
+    line-height: 83px;
+    }
+
+    .salah_area {
+    flex-wrap: wrap;
+}
+
+
+.mission{
+  flex-direction: column;
+      padding: 33px 0px;
+      gap: 40px;
+}
+
+.mission .left {
+     justify-content: center;
+        align-self: unset;
+        width: unset;
+}
+
+.mission .left .top p.para_one {
+    padding: 0px 45px;
+}
+
+.mission .right p {
+   text-align: center;
+}
+
+.mission .right img {
+  width: unset;
+}
+
+.quran_hadith .top .quranic_verse, .quran_hadith .bottom .quranic_verse {
+    text-align: center;
+}
+
+.gallery {
+    padding: 1px 20px 45px 20px;
+ }
+
+.location_container {
+    padding: 30px 20px;
+  }
+
+  .about_page .about_content  .vision, .facilities {
+        flex-direction: column-reverse;
+}
+
+.about_page .about_content .vision .right p {
+    padding: 0 56px;
+}
+
+.about_page .about_content .left, .right {
+    width: unset;
+}
+
+.about_page .about_content .about .left p {
+    padding: 0px 50px;
+    text-align: justify;
+}
+
+.about_page .about_content .goals{
+flex-direction: column;
+padding: 0 55px;
+}
+
+.about_page .about_content .about{
+flex-direction: column;
+padding: 0 55px;
+}
+
+.about_page .about_content, .education_page .about_content {
+    gap: 60px;
+
+}
+
+.about_page .about_content .facilities .left {
+    display: none;
+}
+
+
+
+
+.masjid_page .main_content .geographical, .masjid_page .main_content .current {
+ flex-direction: column;
+}
+
+.masjid_page .main_content .left {
+   width: unset;
+}
+
+.masjid_page .main_content .left h1 {
+     text-align: center;
+}
+
+.masjid_page .main_content .left p {
+    text-align: justify;
+}
+
+.masjid_page .main_content .gate {
+     flex-direction: column;
+     padding: unset;
+     gap: 91px;
+     text-align: center;
+}
+
+.masjid_page .midd img{
+ transform: rotate(90deg);
+}
+
+.masjid_page .main_content .current_progress {
+padding: unset;
+}
+
+.masjid_page .main_content .current_progress p {
+       text-align: justify;
+}
+
+.donate .middle p {
+width: auto;
+}
+
+.donate .bottom .bar {
+    width: 100%;
+}
+.team_content {
+     padding: 60px 33px;
+       text-align: justify;
+}
+
+.form_section {
+    padding: 80px 25px;
+}
+
+}
+
+
+
+
+/* Styles for phones */
+@media (max-width: 576px) {
+   .navbar .nav_menu {
+    font-size: 16px;
+       gap: 20px;
+       flex-direction: column;
+           align-items: center;
+}
+
+.navbar {
+    padding: 17px 11px;
+         flex-direction: column;
+         height: auto;
+         justify-content: center;
+         align-items: center;
+         gap: 29px;
+}
+
+.hero_section {
+    background-position: center;
+
+}
+
+.hero_section .hero_content .top p {
+      font-size: 43px;
+ }
+
+
+.hero_section .hero_content .middle p:nth-child(1) {
+    line-height: 83px;
+    font-size: 78px;
+    }
+    
+  .hero_section .hero_content .middle p{
+
+font-size: 20px;
+  }
+
+.facebook_feeds .img_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.salah_area {
+flex-direction: column;
+}
+
+.facebook_feeds .img_container {
+    flex-wrap: wrap;
+}
+
+.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mission .left {
+width: unset;
+
+}
+
+.mission .right {
+width: unset;
+
+}
+
+.gallery {
+    padding: 1px 0px 45px 0px;
+  }
+
+.quran_hadith .top .quranic_verse, .quran_hadith .bottom .quranic_verse {
+     text-align: center;
+}
+
+.quran_hadith .top p.two {
+     text-align: center;
+}
+
+.gallery .gallery_content  {
+  gap: 30px;
+}
+
+.gallery .gallery_content .box  {
+    width: 400px;
+    height: 350px;
+    border: 1 px solid red;
+}
+
+.gallery .gallery_content .box img  {
+    
+    border: 1 px solid black;
+}
+
+.location_container {
+    padding: 30px 12px;
+   }
+
+.footer {
+    
+    justify-content: center;
+   
+    height: auto;
+        align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: ;
+}
+
+.footer .footer_menu {
+    flex-direction: row;
+    font-size: 20px;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 3px;
+}
+
+.footer .logo {
+    flex-direction: column;
+    justify-content: center;
+       align-items: center;
+}
+
+.about_page .about_content .about, .goals, .facilities {
+     flex-direction: column;
+}
+
+.about_page .about_content .vision {
+     flex-direction: column-reverse;
+}
+   
+.about_page .about_content .facilities .left {
+display: none;    
+}
+   
+.about_page .about_content .left, .right {
+    width: unset;
+    padding: 0 33px;
+    text-align: justify;
+}
+
+/* .about_page img {
+       width: 440px;
+ } */
+
+ .about_page .about_content .about, .vision, .goals, .facilities {
+padding: unset;
+}
+
+.about_page .about_content .vision .right {
+   width: unset;
+}
+
+.masjid_page .main_content .geographical,
+.masjid_page .main_content .current{
+    flex-direction: column;
+}
+
+.masjid_page .main_content {
+   padding: 30px 28px;
+   text-align: justify;
+ }
+
+ .masjid_page .main_content .left {
+    width: unset;
+    
+}
+
+ .masjid_page .main_content .right {
+    width: 100%;
+    padding: unset;
+
+    
+}
+
+.masjid_page img {
+ width: 100%;
+}
+
+.masjid_page .main_content .left h1 {
+    text-align: center;
+}
+
+
+.masjid_page .main_content .left h1 {
+     text-align: center;
+}
+
+.masjid_page .main_content .left p {
+    text-align: justify;
+}
+
+.masjid_page .main_content .gate {
+     flex-direction: column;
+     padding: unset;
+     gap: 91px;
+     text-align: center;
+}
+
+.masjid_page .midd img{
+ transform: rotate(90deg);
+}
+
+.masjid_page .main_content .current_progress {
+padding: unset;
+}
+
+.masjid_page .main_content .current_progress p {
+       text-align: justify;
+}
+
+.donate .middle p {
+   width: unset;
+}
+
+
+.masjid_page .main_content {
+    
+     gap: 40px;
+   }
+
+   .masjid_page .top iframe{
+    width: 100%;
+   }
+
+   .donate .bottom .bar {
+    width: 100%;
+}
+
+.masjid_page .main_content .geographical, .masjid_page .main_content .current {
+    gap: 40px;
+}
+
+.education_page .about_content .one, .education_page .about_content .two, .education_page .about_content .three, .education_page .about_content .four {
+    flex-direction: column;
+    gap: 20px
+}
+
+.education_page .about_content .left, .right {
+    width: unset;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+    .education_page .about_content .two {
+        flex-direction: column-reverse;
+    }
+
+    .education_page .about_content .two .right h1 {
+    text-align: center;
+}
+
+    .education_page .about_content .left h1,
+        .education_page .about_content .left h2 
+        {
+      text-align: center;
+    }
+
+    .education_page .school {
+    flex-direction: column;
+}
+
+.education_page .school .arabic, 
+.education_page .school .non_arabic {
+    width: unset;
+}
+
+.education_page .school .arabic .head, 
+.education_page .school .non_arabic .head {
+    font-size: 18px;
+}
+
+.education_page .school {
+    gap: 55px;
+}
+
+.about_page .about_content, .education_page .about_content {
+    gap: 0px;
+ }
+
+ .team_content {
+     padding: 60px 30px;
+     gap: 28px;
+}
+
+.form_section {
+    padding: 30px 20px;
+    background-color: #0d6cac;
+    gap: 30px;
+}
+
+}
+
+
 

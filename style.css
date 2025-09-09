@@ -1818,15 +1818,27 @@ width: auto;
 
 }
 
+.hero_content {
+    padding: 80px 10px;
+}
+
 .hero_section .hero_content .top p {
-      font-size: 43px;
+      font-size: 35px;
  }
+
+ .facebook_feeds .title {
+    text-align: center;
+}
 
 
 .hero_section .hero_content .middle p:nth-child(1) {
     line-height: 83px;
-    font-size: 78px;
+   font-size: 50px;
     }
+
+    .hero_section .hero_content .middle p:nth-child(2) {
+       line-height: 51px;
+   }
     
   .hero_section .hero_content .middle p{
 
@@ -1863,7 +1875,7 @@ width: unset;
 
 .mission .right {
 width: unset;
-
+text-align: center;
 }
 
 .gallery {
@@ -1872,6 +1884,14 @@ width: unset;
 
 .quran_hadith .top .quranic_verse, .quran_hadith .bottom .quranic_verse {
      text-align: center;
+}
+
+.quran_hadith {
+    padding: 40px 8px;
+}
+
+.quran_hadith .top {
+  width: 100%;
 }
 
 .quran_hadith .top p.two {
@@ -1957,6 +1977,26 @@ padding: unset;
 .masjid_page .main_content .geographical,
 .masjid_page .main_content .current{
     flex-direction: column;
+}
+
+
+.masjid_page .main_content .current_progress h1 {
+   text-align: center;
+}
+
+.donate .bottom {
+    width: 100%;
+    /* padding: 79px; */
+}
+
+.dollar {
+    flex-direction: column;
+    gap: 50px;
+}
+
+.team_content .the_waqf .bottom {
+
+    flex-wrap: wrap;
 }
 
 .masjid_page .main_content {
@@ -2083,7 +2123,7 @@ padding: unset;
 
  .team_content {
      padding: 60px 30px;
-     gap: 28px;
+     gap: 65px;
 }
 
 .form_section {

@@ -667,7 +667,7 @@ width: 100%;
 .goals,
 .facilities {
   display: flex;
-  gap: 80px;
+  /* gap: 80px; */
   justify-content: center;
   align-items: center;
 }
@@ -1968,6 +1968,7 @@ display: none;
 
  .about_page .about_content .about, .vision, .goals, .facilities {
 padding: unset;
+gap: 20px;
 }
 
 .about_page .about_content .vision .right {
@@ -2001,8 +2002,12 @@ padding: unset;
 
 .masjid_page .main_content {
    padding: 30px 28px;
-   text-align: justify;
+   
  }
+
+ .masjid_page .main_content .gate .right p {
+ text-align: center;
+}
 
  .masjid_page .main_content .left {
     width: unset;
@@ -2099,6 +2104,10 @@ padding: unset;
       text-align: center;
     }
 
+    .education_page .about_content .three .left p {
+    text-align: center;
+}
+
     .education_page .school {
     flex-direction: column;
 }
@@ -2118,12 +2127,17 @@ padding: unset;
 }
 
 .about_page .about_content, .education_page .about_content {
-    gap: 0px;
+            gap: 40px;
  }
 
  .team_content {
      padding: 60px 30px;
      gap: 65px;
+     /* margin: auto; */
+}
+
+.team_content .para {
+text-align: center;
 }
 
 .form_section {
